@@ -1,26 +1,37 @@
 * {
     font-family:font-family:'Rubik', sans-serif;
     font-size:12px;
+    margin:0;
+    border:0;
+    padding:0;
+      
 }
 
 body{
     background-image:linear-gradient(to right, rgb(141, 99, 182),rgb(82, 0, 165));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .box {
     color:white;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
     background-color: rgba(0,0, 0,0.6);
-    padding: 15px;
+    padding: 1rem;
     border-radius: 15px;
-    width: 25%;
+    min-width: 26vw;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 fieldset {
     border: 3px solid rgb(78, 78, 78);
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 legend {
@@ -30,20 +41,10 @@ legend {
     background-color:rgb(78, 78, 78);
     border-radius: 8px;
     color: white;
+    align-items: center;
+    justify-content: center;
+}
 
-}
-.inputBox {
-    position: relative;
-
-}
-.labelinput {
-    position: absolut;
-    top: 0px;
-    left: 0px;
-    pointer-events: none;
-    transition: .5s;
-    
-}
 .inputUser {
     background: none;
     border:none;
@@ -74,4 +75,12 @@ legend {
 }
 #submit:hover {
     background-image:linear-gradient(to right, rgb(90, 43, 136),rgb(39, 2, 77));
+}
+
+@media only screen and (max-width:450px) {
+    * {
+        font-family:font-family:'Rubik', sans-serif;
+        font-size:10px;
+              
+    }
 }
